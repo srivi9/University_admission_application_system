@@ -1,0 +1,85 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Images/campus.jpg);
+}
+
+.signup-header {
+    background-color: #001d3d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.signup-form {
+    width: 80%;
+    max-width: 300px;
+    margin: 50px auto;
+    background-color: #001d3d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: -8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.signup-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    
+}
+
+.already-account {
+    text-align: center;
+    padding: 20px;
+    background-color: #001d3d;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 5px;
+    color: #ddd;
+}
+
+.already-account a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.already-account a:hover {
+    color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: small;
+}

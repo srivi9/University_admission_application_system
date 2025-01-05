@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-nav {
+    background-color: #ffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease;
+}
+
+.logout-navigation {
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.logout-navigation a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.logout-navigation a:hover{
+    color: #007bff;
+    font-size: large;
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeIn 1s ease;
+}
+
+.profile-container {
+    width: 800px;
+    margin: 20px auto ; 
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    margin-bottom: 100px;
+    align-items: center; 
+    animation: fadeIn 1s ease;
+}
+
+.action-buttons{
+   
+    margin: 20px auto;
+    padding: 50px;
+   
+    border-radius: 10px;
+
+    
+
+    animation: fadeIn 1s ease;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+.profile-content {
+    display: flex;
+    animation: fadeIn 1s ease;
+}
+
+.profile-info {
+    margin-right: 40px;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+.profile-details strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.additional-details {
+    flex-grow: 1;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: fadeIn 1s ease;
+}
+
+.view-status-button {
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+    
+}
+
+.submit-application-button {
+    background-color: #007bff;
+    color: #fff;
+    position: relative;
+ 
+}
+
+.footer {
+    background-color: #ffff;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+form{
+    align-items: center;
+}
+.top-nav img {
+    width: 50px; 
+    margin-right: auto; 
+
+}
+.apps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.apps img{
+    width: 180px; 
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    
+}
+
+.apps img:hover {
+    transform: scale(1.05);
+}
+.button-container {
+    margin: 10px;
+    animation: fadeIn 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    column-gap: 10px;
+}
+.button-container button {
+     
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+.app2 {
+   
+    
+    height: 140px;
+    
+}
+
+/* Css for reject appplication page */
+.reject-container {
+    margin-top:20%;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 1s ease;
+    
+}
+.accept-button{
+    background-color: green;
+    color: #fff;
+    position: relative;
+    left:-10px;
+}
+
+.reject-button{
+    background-color: red;
+    color: #fff;
+    position: relative;
+    left: 30px;
+}
+
+.apps img:hover {
+    transform: scale(1.05);
+}
+.updateDetails {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+.footer {
+    background-color: #3ba7ff;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .apps{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .profile-container{
+        height: 70%;
+    }
+}

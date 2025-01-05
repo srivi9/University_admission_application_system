@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../login-signup/StyleSheets/signup-style.css">
+</head>
+
+<body>
+    <div class="signup-header">
+        <h1>Sign up</h1>
+        <h3>create your account</h3>
+    </div>
+
+    <div class="signup-form">
+        <form action="signup.php" method="post">
+
+            <label for="firstname">Firstname</label>
+            <span class="error">
+                <?php echo $firstnameErr;?>
+            </span><br>
+            <input type="text" id="firstname" name="firstname">
+            <br>
+
+            <label for="surname">Surname</label>
+            <span class="error">
+                <?php echo $surnameErr;?>
+            </span><br>
+            <input type="text" id="surname" name="surname">
+            <br>
+
+            <label for="username">Username</label>
+            <span class="error">
+                <?php echo $usernameErr;?>
+            </span><br>
+            <input type="text" id="username" name="username">
+            <br>
+
+            <label for="email">Email</label>
+            <span class="error">
+                <?php echo $emailErr;?>
+            </span><br>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <label for="password">Password</label>
+            <span class="error">
+                <?php echo $passwordErr;?>
+            </span><br>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <label for="confirm-pass">Confirm Password</label>
+            <span class="error">
+                <?php echo $confirmPasswordErr;?>
+            </span><br>
+            <input type="password" name="confirm-pass" id="confirm-pass">
+            <br>
+
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+    <div class="already-account">
+        <h4>Already have an account?</h4>
+        <a href="login-page.html">Login</a>
+    </div>
+
+</body>
+
+</html>

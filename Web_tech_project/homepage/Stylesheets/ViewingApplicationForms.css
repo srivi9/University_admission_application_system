@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/hu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+span{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+span:hover{
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+table{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#students td, #student th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+thead {color:green;}
+tbody {
+    color:rgb(53, 53, 53);
+    font-size: 15px;
+}
+tfoot {color:red;}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+th, td{
+    padding: 10px 0px;
+}
+caption{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+#students th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #272727;
+    color: white;
+}
+.button {
+    background-color: #00058d; 
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #992915; 
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;}
+
+#students tr:hover {background-color: #ddd;}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#students {
+    animation: fadeIn 2s;
+}
+.button2{
+    background-color: red;
+}
+.modal {
+   
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal {
+    animation: slideUp 0.5s ease-out forwards; 
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+.modal.closing {
+    animation: slideDown 0.5s ease-in forwards; 
+}
+form{
+    border-radius: 30px;
+}
